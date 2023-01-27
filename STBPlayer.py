@@ -121,7 +121,7 @@ def main():
     print('--------------------------------------')
     
     
-    recSetting = input('Would you like to play with AI reccomendations? (y/n) ')
+    recSetting = input('Would you like to play with AI recommendations? (y/n) ')
     while (not(recSetting == 'y' or recSetting == 'n')):
         recSetting = input('Please answer with y or n: ')
 
@@ -166,7 +166,7 @@ def main():
             if aiMove =="":
                 break;
             if recSetting:
-                print('AI Reccomendation:', aiMove)
+                print('AI Recommendation:', aiMove)
             move = input('Enter your move: ')
             while ai.make_move(move, (dice1 + dice2)) == False:
                 move = input('Invalid input please try again: ')
